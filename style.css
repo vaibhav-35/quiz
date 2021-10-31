@@ -9,6 +9,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .background{
     
@@ -21,7 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+    box-shadow: 12px 0 15px -4px rgba(32, 40, 49, 0.8), -12px 0 8px -4px rgba(55, 73, 95, 0.8);
     padding:0 3rem;
 }
 .question{
