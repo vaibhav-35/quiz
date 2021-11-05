@@ -68,6 +68,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #prev:hover,#next:hover,.optionfield li:hover{
