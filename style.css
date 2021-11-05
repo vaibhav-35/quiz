@@ -24,12 +24,17 @@ body{
     box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
     padding:0 3rem;
 }
+
 .question{
     font-size: 1.5rem;
 }
+
 .optionfield{
     height: 50vh;
     overflow-y:scroll;
+}
+.optionfield::-webkit-scrollbar{
+    width: 0px;
 }
 .optionfield ul li{
     list-style:inside lower-alpha;
