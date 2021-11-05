@@ -82,10 +82,7 @@ import questions from './que.js'
  }
  nextbtn.addEventListener('click',nextquestion);
  prevbtn.addEventListener('click',previousquestion);
- submitbtn.addEventListener('mouseover',(e)=>{
-    //nextbtn.rem
-    document.querySelector('body').classList.add('blur')
- })
+ 
  function nextquestion()
  {
     queIdx=(queIdx+1)%questions["questions"].length;
