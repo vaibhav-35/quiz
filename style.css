@@ -9,10 +9,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 .background{
     
@@ -25,7 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow: 12px 0 15px -4px rgba(32, 40, 49, 0.8), -12px 0 8px -4px rgba(55, 73, 95, 0.8);
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
     padding:0 3rem;
 }
 .question{
@@ -44,25 +40,6 @@ body{
     border-radius: 4px;
     
 }
-.nav{
-    display: flex;
-    height: 6vh;
-    justify-content:space-between;
-    flex-direction: row;
-}
-.nav div{
-    border: 0.5px solid lightgrey;
-    border-radius: 3%;
-    min-width: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav div:hover,.optionfield li:hover{
-    border-color: grey;
-    box-shadow: 5px 5px 5px -2px lightgrey;
-}
 .correctopt{
     background-color: rgb(115, 188, 236);
     border-color: rgb(21, 130, 202);
@@ -71,4 +48,44 @@ body{
 {
     background-color:rgb(214, 145, 145);
     border-color: 'red' ;
+}
+.nav{
+    display: flex;
+    height: 6vh;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.navbtn{
+    border: 0.5px solid lightgrey;
+    border-radius: 3%;
+    min-width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev:hover,#next:hover,.optionfield li:hover{
+    border-color: grey;
+    box-shadow: 5px 5px 5px -2px lightgrey;
+}
+
+#submit{
+
+    min-width: 6.5rem;
+    color:red;
+    font-size: larger;
+    background-color:white;
+    border-radius: 50px;
+    border: solid 2px red;
+    transition:0.15s ease-in;
+}
+
+#submit:hover{
+    transform: scale(1.04);
+    background-color: red;
+    color: white;
+}
+.blur{
+    opacity: 0.3;
 }
