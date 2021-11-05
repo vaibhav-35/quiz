@@ -140,6 +140,7 @@
 
 //code
  var queIdx=0;
+ var  points=0;
  const quePanel=document.querySelector('.question');
  const optionsPanel = document.querySelector(".optionfield");
  const nextbtn=document.querySelector("#next");
@@ -181,8 +182,9 @@
             
          }   
          else {
-         e.target.classList.add('correctopt');
-          
+            e.target.classList.add('correctopt');
+            points++;
+            console.log(points)
          }
       }  
     });
