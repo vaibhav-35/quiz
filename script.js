@@ -103,6 +103,5 @@ import questions from './que.js'
     update();
  }
  function displayResults(e){
-    let finalscore =  0;
-
+    window.alert("your score is "+correctGuess);
  }
