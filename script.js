@@ -46,15 +46,18 @@ import questions from './que.js'
    {
       for(let i=0;i<4;i++){
          if(questions["questions"][queIdx]['answers'][i]==e.target.textContent)
-            questions['questions'][queIdx]['visited'][i]='true';
-   }
+            if(questions['questions'][queIdx]['visited'][i]=='false'){
+               questions['questions'][queIdx]['visited'][i]='true';
+               correctGuess++;
+            };
+         }
        if(e.target.textContent!=correctans)
       {
          e.target.classList.add('incorrectopt');
          incorrectGuess++;
       }   
       else {
-         correctGuess++;
+      
          e.target.classList.add('correctopt');
       }
    }  
@@ -82,7 +85,8 @@ import questions from './que.js'
  }
  nextbtn.addEventListener('click',nextquestion);
  prevbtn.addEventListener('click',previousquestion);
- 
+ submitbtn.addEventListener('click',displayResults);
+
  function nextquestion()
  {
     queIdx=(queIdx+1)%questions["questions"].length;
@@ -97,4 +101,8 @@ import questions from './que.js'
     }
     else
     update();
+ }
+ function displayResults(e){
+    let finalscore =  0;
+
  }
